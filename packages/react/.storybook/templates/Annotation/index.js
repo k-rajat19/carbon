@@ -10,7 +10,7 @@ import classnames from 'classnames';
 import React from 'react';
 import './Annotation.scss';
 
-import { WarningHex, Layers, Chemistry } from '@carbon/react/icons';
+// import { WarningHex, Layers, Chemistry } from '@carbon/react/icons';
 
 import { prefix } from '../_prefix';
 
@@ -27,7 +27,7 @@ const types = {
 };
 
 function Annotation({ className, type, text, children }) {
-  const Icon = types[type].icon;
+  // const Icon = types[type].icon;
 
   const classes = classnames([
     className,
@@ -38,7 +38,7 @@ function Annotation({ className, type, text, children }) {
   return (
     <div className={classes}>
       <div className={`${prefix}--annotation__label`}>
-        <Icon />
+        {/* <Icon /> */}
         {text}
       </div>
       <div className={`${prefix}--annotation__content`}>{children}</div>

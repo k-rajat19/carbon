@@ -6,8 +6,8 @@
  */
 
 import './Icons.stories.scss';
-import React from 'react';
-import { Bee, Bicycle, ChevronUp } from '../../../icons';
+// import React from 'react';
+// import { Bee, Bicycle, ChevronUp } from '../../../icons';
 
 // eslint-disable-next-line storybook/csf-component
 export default {
@@ -15,9 +15,8 @@ export default {
 };
 
 export const Default = () => {
-  return (
-    <>
-      <section className="demo-icon-example">
+  return {
+    /* <section className="demo-icon-example">
         <h2>16 pixel (default)</h2>
         <Bee />
       </section>
@@ -30,13 +29,12 @@ export const Default = () => {
       <section className="demo-icon-example">
         <h2>32 pixel</h2>
         <ChevronUp size={32} />
-      </section>
-    </>
-  );
+      </section> */
+  };
 };
 
-export const Playground = (args) => {
-  return <Bee {...args} />;
+export const Playground = () => {
+  // return <Bee {...args} />;
 };
 
 Playground.args = {
