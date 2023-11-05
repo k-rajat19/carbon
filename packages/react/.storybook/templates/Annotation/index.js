@@ -14,25 +14,25 @@ import './Annotation.scss';
 
 import { prefix } from '../_prefix';
 
-const types = {
-  'deprecation-notice': {
-    icon: WarningHex,
-  },
-  layer: {
-    icon: Layers,
-  },
-  'feature-flags': {
-    icon: Chemistry,
-  },
-};
+// const types = {
+//   'deprecation-notice': {
+//     icon: WarningHex,
+//   },
+//   layer: {
+//     icon: Layers,
+//   },
+//   'feature-flags': {
+//     icon: Chemistry,
+//   },
+// };
 
-function Annotation({ className, type, text, children }) {
+function Annotation({ className, text, children }) {
   // const Icon = types[type].icon;
 
   const classes = classnames([
     className,
     `${prefix}--annotation`,
-    `${prefix}--annotation--${type}`,
+    `${prefix}--annotation`,
   ]);
 
   return (
@@ -65,7 +65,7 @@ Annotation.propTypes = {
   /**
    * The story to be rendered with this annotation.
    */
-  type: PropTypes.oneOf(Object.keys(types)),
+  // type: PropTypes.oneOf(Object.keys(types)),
 };
 
 export { Annotation };

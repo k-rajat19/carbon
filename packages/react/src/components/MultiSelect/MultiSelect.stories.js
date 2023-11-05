@@ -113,6 +113,17 @@ const items = [
   },
 ];
 
+const selectedItems = [
+  {
+    id: 'downshift-1-item-0',
+    text: 'Option 1',
+  },
+  {
+    id: 'downshift-1-item-1',
+    text: 'Option 2',
+  },
+];
+
 export const Playground = (args) => {
   return (
     <div style={{ width: 300 }}>
@@ -249,7 +260,7 @@ export const WithInitialSelectedItems = () => {
         helperText="This is helper text"
         items={items}
         itemToString={(item) => (item ? item.text : '')}
-        initialSelectedItems={[items[0], items[1]]}
+        initialSelectedItems={selectedItems}
         selectionFeedback="top-after-reopen"
       />
     </div>
